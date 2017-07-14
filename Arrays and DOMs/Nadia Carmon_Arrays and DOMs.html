@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+
+<h1 id = "text"></h1>
+
+<script type="text/javascript">
+	
+//Create an array that has the elements "apple", "orange" & "kiwi", separated by commas//
+	var fruits = [" apple,", " orange,", " kiwi,"];
+//Remove the first element in the array(" apple,")//	
+	fruits.shift();
+//Organizes the elements in the array alphabetically//
+	fruits.sort();
+//Pushes the prompt to the end of the array//	
+	fruits.push(prompt("Add more fruit"));
+//Display var fruits elements in the H1 Id "text". Also adds " with " to each element, included texts entered in the prompt//
+	document.getElementById("text").innerHTML = fruits.join(' with ')
+
+</script>
+
+</body>
+</html>
