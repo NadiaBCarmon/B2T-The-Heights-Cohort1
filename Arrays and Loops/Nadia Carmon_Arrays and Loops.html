@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+<script type="text/javascript">
+	//Create a variable that is an array of the colors we have chosen//
+	var color =  ["Blue", "Green", "Red", "Orange", "Violet", "Indigo", "Yellow"];
+
+	//Create a variable that will allow us to sort our colors into their ordinal positions//
+	var o = ["th", "st", "nd", "rd"];
+
+	//Create a For Loop. Steps: 1)Initialization, 2)Condition & 3)Implementation//
+	for(var i=0; i<color.length; i++){
+		
+		if (i == 0){
+			console.log((i+1) + o[1] + " choice is " + color[i]);
+		}//End of If statement//
+
+
+		else if (i == 1){
+			console.log((i+1) + o[2] + " choice is " + color[i]);
+		}//End of Else If statement//
+
+
+		else if (i== 2){
+			console.log((i+2) + o[3] + " choice is " + color[i]);
+		}//End of Else If statement//
+
+
+		else {
+			console.log((i) + o[0] + " choice is " + color[i]);
+		}//End of Else statement//
+
+	}//End of For Loop//
+
+</script>
+</body>
+</html>
