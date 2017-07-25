@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+
+<!--Create an ID tag for our P element -->
+<p id="display"></p>
+
+<!-- Forms are separate tags that allow to create text boxes that capture information -->
+
+<form>
+
+<!--Create a text box input to enter first name + last name and a submit button-->
+
+	First name: <input type="text" id="fname" placeholder="Enter First Name">
+	Last name: <input type="text" id="lname" placeholder="Enter Last Name">
+	<input type="button" value="Submit" onclick="getFormValue()">
+
+</form>
+
+<script type="text/javascript">
+
+	//Create a function to get information that is entered into the form and then display that information on the page//	
+	function getFormValue(){
+		var fname = document.getElementById("fname").value;
+		var lname = document.getElementById("lname").value;
+
+	//Alternative - You can console.log the fname and lname values, too. For example, if you're creating a subscription email list //		
+		document.getElementById("display").innerHTML = fname + " " + lname;
+	}
+
+</script>
+
+</body>
+</html>
