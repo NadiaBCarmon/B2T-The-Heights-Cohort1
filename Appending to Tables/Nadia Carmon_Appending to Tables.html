@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+
+
+<!--Create a table that has the name "Clifford" & "Harris" surrounded by a border-->
+<table id= "myTable" border="1">
+	<tr>
+		<td>Clifford</td>
+		<td>Harris</td>
+	</tr>
+</table>
+
+<!--Create 2 inputs to enter texts into-->
+Column 1: <input type="text" id="col1"><br>
+Column 2: <input type="text" id="col2"><br>
+<input type="button" value="Insert Row" onclick="insertRow()">
+
+<script type="text/javascript">
+	function insertRow(){
+		//Get data entered into the col1 and col2 input//
+		var table = document.getElementById("myTable");
+		var data1 = document.getElementById("col1").value;
+		var data2 = document.getElementById("col2").value;
+	
+		//Create table rows and data elements td1 and td2 so that texts of inserted data will appear in the boxes//
+		var tr = document.createElement("tr");
+		var td1 = document.createElement("td");
+		var td2 = document.createElement("td");
+
+
+		//Append data onto table//
+		td1.innerHTML = data1; 
+		td2.innerHTML = data2;
+		tr.appendChild(td1);
+		tr.appendChild(td2);
+		table.appendChild(tr);
+
+	}
+
+</script>
+
+</body>
+</html>
